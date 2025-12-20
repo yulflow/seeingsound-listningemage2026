@@ -15,10 +15,11 @@ The main page background uses a local video file.
 - File: `DYSTOPIA_VANISHED_SOUNDS.mp4`
 - Replace: Overwrite with the same filename or change the `<source>` path in `index.html`.
 
-## License (Code)
+## License
 
-The website code (HTML/CSS/JS) in this repository is licensed under the MIT License.
-See `LICENSE` for details.
+All contents of this repository are protected by copyright, and unauthorized
+use, reproduction, modification, distribution, or public display is prohibited.
+See `LICENSE` and `LICENSE.KO` for details.
 
 ## Copyright & Usage (Content)
 
