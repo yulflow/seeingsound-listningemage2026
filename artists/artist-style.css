@@ -1,0 +1,278 @@
+/* Artist Page Specific Styles */
+
+/* Back Navigation */
+.back-nav {
+    padding: 30px 20px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.back-link {
+    color: var(--text-tertiary);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--text-primary);
+}
+
+/* Artist Header */
+.artist-header {
+    padding: 50px 20px 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.artist-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.artist-name-en {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--text-light);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Artist Work Section */
+.artist-work {
+    padding: 50px 20px;
+}
+
+/* Work Image */
+.work-image-container {
+    margin-bottom: 40px;
+}
+
+.work-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.work-info {
+    margin-top: 20px;
+}
+
+.work-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.work-description {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text-secondary);
+    text-align: justify;
+}
+
+/* Artist Bio Section */
+.artist-bio {
+    padding: 40px 20px;
+}
+
+.artist-bio .content-box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Artist Info Container */
+.artist-info-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+/* Artist Photo */
+.artist-photo-container {
+    flex-shrink: 0;
+}
+
+.artist-photo {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.artist-text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Personal Link */
+.personal-link-container {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border-color);
+}
+
+.personal-link {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 12px 24px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.personal-link:hover {
+    color: var(--text-dark);
+    border-color: var(--text-light);
+    background: var(--card-bg);
+}
+
+/* Navigation Section */
+.navigation-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background: var(--text-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Artist Pages */
+@media (max-width: 768px) {
+    .artist-title {
+        font-size: 2.5rem;
+    }
+
+    .artist-name-en {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .work-title {
+        font-size: 1.5rem;
+    }
+
+    .work-description {
+        font-size: 1rem;
+    }
+
+    .personal-link {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .nav-button {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .work-image {
+        max-width: 100%;
+    }
+
+    .artist-info-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .artist-photo {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        aspect-ratio: 3/4;
+    }
+}
+
+@media (max-width: 480px) {
+    .artist-title {
+        font-size: 2rem;
+    }
+
+    .artist-name-en {
+        font-size: 0.9rem;
+    }
+
+    .back-link {
+        font-size: 0.9rem;
+    }
+
+    .work-title {
+        font-size: 1.3rem;
+    }
+
+    .work-image {
+        max-width: 100%;
+    }
+
+    .artist-info-container {
+        gap: 20px;
+    }
+
+    .artist-photo {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3/4;
+    }
+
+    .image-caption {
+        font-size: 0.85rem;
+    }
+
+    .personal-link {
+        font-size: 0.95rem;
+        padding: 10px 18px;
+    }
+
+    .nav-button {
+        font-size: 0.95rem;
+        padding: 12px 25px;
+    }
+
+    .artist-work, .artist-bio {
+        padding: 30px 20px;
+    }
+
+    .navigation-section {
+        padding: 40px 20px;
+    }
+}
