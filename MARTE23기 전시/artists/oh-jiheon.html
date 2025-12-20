@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오지헌 | 보는소리, 듣는영상</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="artist-style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="다크모드 토글">
+        <svg class="theme-toggle-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="theme-toggle-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+
+
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html" class="back-link">← 전시 메인으로 돌아가기</a>
+        </nav>
+
+        <header class="artist-header">
+            <h1 class="artist-title">오지헌</h1>
+            <p class="artist-name-en">OH JIHEON</p>
+        </header>
+
+        <section class="artist-work">
+            <div class="content-box">
+                <h3 class="section-title">작품</h3>
+
+                <div class="work-image-container">
+                    <img src="images/work-placeholder.jpg" alt="작품 이미지" class="work-image">
+                    <p class="image-caption">※ 작품 이미지를 images/work-placeholder.jpg 로 교체해주세요</p>
+                </div>
+
+                <div class="work-info">
+                    <p class="work-title">작품명을 입력해주세요</p>
+                    <p class="work-description">
+                        작품 설명을 입력해주세요. 이 작품은 디스토피아: 소멸된 소리라는 주제 아래
+                        창작된 멀티미디어 작품입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-bio">
+            <div class="content-box">
+                <h3 class="section-title">작가 소개</h3>
+
+                <div class="artist-info-container">
+                    <div class="artist-photo-container">
+                        <img src="images/artist-placeholder.jpg" alt="작가 사진" class="artist-photo">
+                        <p class="image-caption">※ 작가 사진을 images/artist-placeholder.jpg 로 교체해주세요</p>
+                    </div>
+
+                    <div class="artist-text-content">
+                        <p class="description">
+                            작가 소개를 입력해주세요.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="personal-link-container">
+                    <a href="#" class="personal-link" target="_blank">작가 개인 페이지 방문하기 →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="navigation-section">
+            <a href="../index.html" class="nav-button">전시 메인으로 돌아가기</a>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-org">한국멀티미디어음악학회 SIMM</p>
+                <p class="footer-title">보는소리, 듣는영상</p>
+            </div>
+        </footer>
+    </div>
+
+        <script>
+        // Dark mode toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+
+            // Load saved theme preference
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+            }
+
+            // Toggle theme on button click
+            themeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            });
+        });
+    </script>
+
+</body>
+</html>
